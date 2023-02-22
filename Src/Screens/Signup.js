@@ -9,16 +9,12 @@ import {
 import React, {useState} from 'react';
 import {Input} from 'react-native-elements';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
-import Icon from 'react-native-vector-icons/FontAwesome';
-import Check_Box from './CheckBox';
 import {TouchableOpacity} from 'react-native';
-import F from '../Assets/F.svg';
 import G from '../Assets/G.svg';
 import A from '../Assets/A.svg';
 import Logo from '../Assets/Logo.svg';
 
 const Signup = ({navigation}) => {
-  const [c, setc] = useState(false);
   const [name, setname] = useState('eye');
 
   return (
@@ -240,7 +236,7 @@ const Signup = ({navigation}) => {
 
           <TouchableOpacity
             onPress={() => {
-              navigation.navigate('Signup');
+              navigation.navigate('Home');
             }}
             style={{
               height: '7%',
@@ -259,7 +255,7 @@ const Signup = ({navigation}) => {
                 fontWeight: 'bold',
                 fontSize: 16,
               }}>
-              Login
+              Continue
             </Text>
           </TouchableOpacity>
          
